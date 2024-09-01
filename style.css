@@ -1,0 +1,93 @@
+*{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center everything */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f8ff; /* Light background color */
+}
+
+/* Container styling */
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+/* Game board styling */
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 60vmin;
+    height: 60vmin;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Box styling */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vmin;
+    width: 18vmin;
+    font-size: 8vmin;
+    background: linear-gradient(145deg, #f7f7f7, #e2e2e2);
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.box:hover {
+    background: #e2e2e2;
+    transform: scale(1.05);
+}
+
+.box:active {
+    background: #dcdcdc;
+    transform: scale(1);
+}
+
+.box:disabled {
+    cursor: not-allowed;
+}
+
+/* Hide element styling */
+.hide {
+    display: none;
+}
+
+/* Reset button styling */
+#reset-btn {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(145deg, #f9f9f9, #e0e0e0);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 1rem;
+}
+
+#reset-btn:hover {
+    background: linear-gradient(145deg, #e0e0e0, #f9f9f9);
+    transform: scale(1.05);
+}
+
+#reset-btn:active {
+    background: #dcdcdc;
+    transform: scale(1);
+}
